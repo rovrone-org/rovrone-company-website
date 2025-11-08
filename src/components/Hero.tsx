@@ -31,10 +31,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1
-            className="max-w-4xl mx-auto mb-6"
-            style={{ fontSize: '8rem' }}
-          >
+          <h1 className="max-w-4xl mx-auto mb-6 text-4xl sm:text-6xl md:text-7xl lg:text-8xl">
             RovrOne Labs
           </h1>
 
