@@ -128,7 +128,7 @@ export function DroneSchool() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-center text-white shadow-2xl"
+          className="mt-16 bg-gray-900 rounded-2xl p-12 text-center text-white shadow-2xl"
         >
           <h2 className="text-white mb-4">
             Ready to Take Flight?

@@ -31,6 +31,10 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          <h1 className="max-w-4xl mx-auto mb-6 text-5xl sm:text-6xl lg:text-7xl">
+            RovrOne Labs
+          </h1>
+
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -41,10 +45,6 @@ export function Hero() {
               Engineering Intelligence Through Innovation
             </div>
           </motion.div>
-
-          <h1 className="max-w-4xl mx-auto mb-6">
-            RovrOne Labs
-          </h1>
 
           <p className="max-w-2xl mx-auto text-gray-600 mb-10 text-lg sm:text-xl">
             Trusted systems for aerial and ground robotics — engineering, manufacturing and training.

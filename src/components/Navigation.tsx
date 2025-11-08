@@ -55,7 +55,7 @@ export function Navigation({ activeSection }: NavigationProps) {
             onClick={() => scrollToSection('home')}
             className="flex items-center space-x-2 transition-transform duration-300 hover:scale-105"
           >
-            <img src={logo} alt="RovrOne Labs" className="h-12 w-auto" />
+            <img src={logo} alt="RovrOne Labs" className="h-16 w-auto" />
           </button>
 
           {/* Desktop Navigation */}

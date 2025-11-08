@@ -55,7 +55,7 @@ export function Footer() {
               onClick={() => scrollToSection('home')}
               className="mb-6 transition-transform duration-300 hover:scale-105"
             >
-              <img src={logo} alt="RovrOne Labs" className="h-12 w-auto" />
+              <img src={logo} alt="RovrOne Labs" className="h-16 w-auto" />
             </button>
             <p className="text-gray-400 mb-6 max-w-sm">
               Trusted systems for aerial and ground robotics — engineering, manufacturing and training.
