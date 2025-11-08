@@ -1,7 +1,26 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Play } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
 
 export function Hero() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const getFontSize = () => {
+    if (windowWidth <= 640) { // Smaller mobile devices
+      return '5rem';
+    }
+    return '8rem'; // Larger screens
+  };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -31,7 +50,11 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 id="hero-company-name" className="max-w-4xl mx-auto mb-6 text-5xl sm:text-8xl font-bold">
+          <h1
+            id="hero-company-name"
+            className="max-w-4xl mx-auto mb-6 font-bold"
+            style={{ fontSize: getFontSize() }}
+          >
             RovrOne Labs
           </h1>
 
