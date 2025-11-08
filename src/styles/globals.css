@@ -187,23 +187,3 @@
 html {
   font-size: var(--font-size);
 }
-
-.hero-title {
-  font-size: 6rem; /* 96px */
-  font-weight: 700;
-  background: -webkit-linear-gradient(left, #4a90e2, #9013fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@media (min-width: 640px) {
-  .hero-title {
-    font-size: 7rem; /* 112px */
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-title {
-    font-size: 8rem; /* 128px */
-  }
-}
