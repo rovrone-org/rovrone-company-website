@@ -42,7 +42,7 @@ export function Footer() {
     { icon: Twitter, href: '#', label: 'Twitter' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
     { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Mail, href: 'mailto:rovronelabs@gmail.com', label: 'Email' }
+    { icon: Mail, href: 'mailto:contact@rovrone.com', label: 'Email' }
   ];
 
   return (
@@ -114,8 +114,8 @@ export function Footer() {
           <div>
             <h4 className="mb-4">Contact</h4>
             <ul className="space-y-3">
-              <li className="text-gray-400">rovronelabs@gmail.com</li>
-              <li className="text-gray-400">+91 90091 07086</li>
+              <li className="text-gray-400">contact@rovrone.com</li>
+              <li className="text-gray-400">+91 91115 55664</li>
               <li className="text-gray-400">Bhopal, Madhya Pradesh, India</li>
             </ul>
           </div>

@@ -29,14 +29,14 @@ export function Contact() {
     {
       icon: Mail,
       title: 'Email',
-      value: 'rovronelabs@gmail.com',
-      link: 'mailto:rovronelabs@gmail.com'
+      value: 'contact@rovrone.com',
+      link: 'mailto:contact@rovrone.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+91 90091 07086',
-      link: 'tel:+919009107086'
+      value: '+91 91115 55664',
+      link: 'tel:+919111555664'
     },
     {
       icon: MapPin,
