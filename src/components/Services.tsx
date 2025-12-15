@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Layers, Cloud, FileText, ArrowRight } from 'lucide-react';
+import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck } from 'lucide-react';
 
 export function Services() {
   const services = [
@@ -25,6 +25,30 @@ export function Services() {
         'Data capture & processing',
         'Real-time analytics',
         'Compliance & safety'
+      ]
+    },
+    {
+      icon: Code2,
+      title: 'IT Software & Digital Engineering',
+      subtitle: 'Custom web, mobile, and enterprise platforms.',
+      description: 'Custom web, mobile, and enterprise platforms with cloud-native architecture, AI-driven automation, and secure system integration.',
+      features: [
+        'Cloud-native architecture',
+        'AI-driven automation',
+        'Secure system integration',
+        'Web, mobile & enterprise platforms'
+      ]
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Drones & Anti-Drone Systems',
+      subtitle: 'UAVs & counter-UAS solutions.',
+      description: 'Indigenous UAV manufacturing, Drone-as-a-Service (DaaS), and advanced counter-UAS solutions for surveillance and critical infrastructure protection.',
+      features: [
+        'Indigenous UAV manufacturing',
+        'Drone-as-a-Service (DaaS)',
+        'Counter-UAS solutions',
+        'Surveillance & infrastructure protection'
       ]
     }
   ];
