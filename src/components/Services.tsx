@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck } from 'lucide-react';
+import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck, BatteryCharging, Bot } from 'lucide-react';
 
 export function Services() {
   const services = [
@@ -49,6 +49,30 @@ export function Services() {
         'Drone-as-a-Service (DaaS)',
         'Counter-UAS solutions',
         'Surveillance & infrastructure protection'
+      ]
+    },
+    {
+      icon: BatteryCharging,
+      title: 'EV & Battery Technologies',
+      subtitle: 'Electric mobility & energy storage.',
+      description: 'Electric mobility solutions, lithium-ion battery systems, and smart energy storage with EV charging infrastructure deployment.',
+      features: [
+        'Electric mobility solutions',
+        'Lithium-ion battery systems',
+        'Smart energy storage',
+        'EV charging infrastructure'
+      ]
+    },
+    {
+      icon: Bot,
+      title: 'Robotics & Automation',
+      subtitle: 'Industrial & intelligent automation.',
+      description: 'Industrial robotics, autonomous mobile robots (AMR/AGV), and intelligent automation for logistics, manufacturing, and security operations.',
+      features: [
+        'Industrial robotics',
+        'Autonomous mobile robots (AMR/AGV)',
+        'Intelligent automation',
+        'Logistics & security operations'
       ]
     }
   ];
