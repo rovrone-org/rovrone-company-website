@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck, BatteryCharging, Bot, Rss, Leaf, Network, MonitorSmartphone, Droplets } from 'lucide-react';
+import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck, BatteryCharging, Bot, Rss, Leaf, Network, MonitorSmartphone, Droplets, FlaskConical } from 'lucide-react';
 
 export function Services() {
   const services = [
@@ -133,6 +133,18 @@ export function Services() {
         'Urban air purification',
         'ESG compliance',
         'Sustainable smart infrastructure'
+      ]
+    },
+    {
+      icon: FlaskConical,
+      title: 'Advanced R&D & Turnkey Projects',
+      subtitle: 'Innovation-led R&D & EPC.',
+      description: 'Innovation-led R&D, AI-driven systems, EPC execution, and end-to-end program management for complex technology initiatives.',
+      features: [
+        'Innovation-led R&D',
+        'AI-driven systems',
+        'EPC execution',
+        'Program management'
       ]
     }
   ];
