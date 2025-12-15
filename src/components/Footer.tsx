@@ -25,10 +25,16 @@ export function Footer() {
       { label: 'Drone School', id: 'drone-school' }
     ],
     services: [
-      { label: 'Drone Manufacturing', id: 'services' },
-      { label: 'DaaS Solutions', id: 'services' },
-      { label: 'Training Programs', id: 'drone-school' },
-      { label: 'Consulting', id: 'contact' }
+      { label: 'IT Software & Digital Engineering', id: 'services' },
+      { label: 'Drones & Anti-Drone Systems', id: 'services' },
+      { label: 'EV & Battery Technologies', id: 'services' },
+      { label: 'Robotics & Automation', id: 'services' },
+      { label: 'IoT & Smart Systems', id: 'services' },
+      { label: 'AgriTech & Smart Farming', id: 'services' },
+      { label: 'ICT & Network Infrastructure', id: 'services' },
+      { label: 'AR/VR & Simulation Labs', id: 'services' },
+      { label: 'VAYONIX™ Green-Tech Solutions', id: 'services' },
+      { label: 'Advanced R&D & Turnkey Projects', id: 'services' }
     ],
     support: [
       { label: 'Contact Us', id: 'contact' },
