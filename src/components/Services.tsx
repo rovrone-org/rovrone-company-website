@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck, BatteryCharging, Bot } from 'lucide-react';
+import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck, BatteryCharging, Bot, Rss, Leaf } from 'lucide-react';
 
 export function Services() {
   const services = [
@@ -73,6 +73,30 @@ export function Services() {
         'Autonomous mobile robots (AMR/AGV)',
         'Intelligent automation',
         'Logistics & security operations'
+      ]
+    },
+    {
+      icon: Rss,
+      title: 'IoT & Smart Systems',
+      subtitle: 'Real-time monitoring & automation.',
+      description: 'End-to-end IoT solutions enabling real-time monitoring, predictive analytics, and automation for industries and smart cities.',
+      features: [
+        'End-to-end IoT solutions',
+        'Real-time monitoring',
+        'Predictive analytics',
+        'Industrial & smart city automation'
+      ]
+    },
+    {
+      icon: Leaf,
+      title: 'AgriTech & Smart Farming',
+      subtitle: 'Precision agriculture & analytics.',
+      description: 'Precision agriculture solutions using IoT sensors, smart irrigation, and drone-based analytics to improve productivity and resource efficiency.',
+      features: [
+        'IoT sensors for agriculture',
+        'Smart irrigation',
+        'Drone-based analytics',
+        'Productivity & resource efficiency'
       ]
     }
   ];
