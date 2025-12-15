@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck, BatteryCharging, Bot, Rss, Leaf } from 'lucide-react';
+import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck, BatteryCharging, Bot, Rss, Leaf, Network, MonitorSmartphone, Droplets } from 'lucide-react';
 
 export function Services() {
   const services = [
@@ -97,6 +97,42 @@ export function Services() {
         'Smart irrigation',
         'Drone-based analytics',
         'Productivity & resource efficiency'
+      ]
+    },
+    {
+      icon: Network,
+      title: 'ICT & Network Infrastructure',
+      subtitle: 'Turnkey ICT & data networks.',
+      description: 'Turnkey ICT solutions including data centers, OFC networks, WAN/LAN/Wi-Fi, surveillance systems, and command & control centers for Government and PSU projects.',
+      features: [
+        'Data centers & OFC networks',
+        'WAN/LAN/Wi-Fi',
+        'Surveillance systems',
+        'Command & control centers'
+      ]
+    },
+    {
+      icon: MonitorSmartphone,
+      title: 'AR/VR & Simulation Labs',
+      subtitle: 'AR/VR labs & simulation environments.',
+      description: 'Design and deployment of AR/VR labs for education, skill development, industrial training, and simulation-based learning environments.',
+      features: [
+        'AR/VR lab design',
+        'Simulation-based learning',
+        'Industrial training',
+        'Education & skill development'
+      ]
+    },
+    {
+      icon: Droplets,
+      title: 'VAYONIX™ Green-Tech Solutions',
+      subtitle: 'Algae-based bioreactors & ESG.',
+      description: 'Algae-based liquid bioreactors for urban air purification, ESG compliance, and sustainable smart infrastructure.',
+      features: [
+        'Algae-based bioreactors',
+        'Urban air purification',
+        'ESG compliance',
+        'Sustainable smart infrastructure'
       ]
     }
   ];
