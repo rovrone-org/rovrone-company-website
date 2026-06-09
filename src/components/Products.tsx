@@ -45,7 +45,7 @@ export function Products() {
           className="text-center mb-16"
         >
           <div className="inline-block mb-4">
-            <div className="text-gray-900 px-4 py-1 rounded-full border border-gray-300 bg-gray-100">
+            <div className="inline-block text-gray-900 px-6 sm:px-8 py-2.5 rounded-full border border-gray-300 bg-gray-100 text-lg sm:text-xl font-medium tracking-[0.15em] uppercase">
               Products
             </div>
           </div>
@@ -104,9 +104,10 @@ export function Products() {
         >
           <img
             src={productsField}
-            alt="Drone Technology"
+            alt="RovrOne aerial survey drone in flight showcasing advanced UAV technology"
             loading="lazy"
-            className="w-full h-[400px] object-cover"
+            decoding="async"
+            className="w-full h-64 sm:h-80 lg:h-[400px] object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex items-end">
             <div className="p-8 text-white">

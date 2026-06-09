@@ -1,8 +1,10 @@
-import { motion } from 'motion/react';
+import { motion, useReducedMotion } from 'motion/react';
 import { ArrowRight, Play } from 'lucide-react';
 import heroAerial from '../assets/images/hero-aerial.jpg';
+import heroAerialSm from '../assets/images/hero-aerial-sm.jpg';
 
 export function Hero() {
+  const prefersReducedMotion = useReducedMotion();
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -86,39 +88,34 @@ export function Hero() {
           >
             <img
               src={heroAerial}
-              alt="Aerial robotics in operation"
+              srcSet={`${heroAerialSm} 1024w, ${heroAerial} 1920w`}
+              sizes="(max-width: 768px) 100vw, 1024px"
+              alt="Aerial robotics drone in flight — RovrOne Labs UAV"
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-[280px] sm:h-[360px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
           </motion.div>
         </motion.div>
 
-        {/* Floating Elements */}
-        <motion.div
-          animate={{
-            y: [0, -20, 0],
-          }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute top-1/4 left-10 w-16 h-16 bg-gray-400/10 rounded-full blur-2xl"
-          aria-hidden="true"
-        />
-        <motion.div
-          animate={{
-            y: [0, 20, 0],
-          }}
-          transition={{
-            duration: 5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }}
-          className="absolute bottom-1/4 right-20 w-24 h-24 bg-gray-500/10 rounded-full blur-2xl"
-          aria-hidden="true"
-        />
+        {/* Floating Elements (skipped when user prefers reduced motion) */}
+        {!prefersReducedMotion && (
+          <>
+            <motion.div
+              animate={{ y: [0, -20, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+              className="absolute top-1/4 left-10 w-16 h-16 bg-gray-400/10 rounded-full blur-2xl"
+              aria-hidden="true"
+            />
+            <motion.div
+              animate={{ y: [0, 20, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+              className="absolute bottom-1/4 right-20 w-24 h-24 bg-gray-500/10 rounded-full blur-2xl"
+              aria-hidden="true"
+            />
+          </>
+        )}
       </div>
 
       {/* Animated Drone Indicator */}
@@ -130,7 +127,7 @@ export function Hero() {
         aria-hidden="true"
       >
         <motion.div
-          animate={{ y: [0, -8, 0] }}
+          animate={prefersReducedMotion ? undefined : { y: [0, -8, 0] }}
           transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
         >
           <svg width="80" height="48" viewBox="0 0 80 48" className="text-gray-600">
@@ -159,7 +156,7 @@ export function Hero() {
                 fill="currentColor"
                 opacity="0.55"
                 style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
-                animate={{ rotate: 360 }}
+                animate={prefersReducedMotion ? undefined : { rotate: 360 }}
                 transition={{ duration: 0.35, repeat: Infinity, ease: 'linear' }}
               />
             ))}
@@ -168,7 +165,7 @@ export function Hero() {
         {/* Drifting ground shadow */}
         <motion.div
           className="w-10 h-1 bg-gray-400/40 rounded-full blur-sm"
-          animate={{ scaleX: [1, 0.7, 1], opacity: [0.5, 0.3, 0.5] }}
+          animate={prefersReducedMotion ? undefined : { scaleX: [1, 0.7, 1], opacity: [0.5, 0.3, 0.5] }}
           transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
         />
       </motion.div>

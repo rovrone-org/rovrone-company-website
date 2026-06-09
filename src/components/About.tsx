@@ -33,7 +33,7 @@ export function About() {
             viewport={{ once: true }}
           >
             <div className="inline-block mb-4">
-              <div className="text-gray-900 px-4 py-1 rounded-full border border-gray-300 bg-gray-100">
+              <div className="inline-block text-gray-900 px-6 sm:px-8 py-2.5 rounded-full border border-gray-300 bg-gray-100 text-lg sm:text-xl font-medium tracking-[0.15em] uppercase">
                 About Us
               </div>
             </div>
@@ -80,9 +80,10 @@ export function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={aboutLab}
-                alt="RovrOne Innovation Lab"
+                alt="RovrOne Labs engineer working on robotics hardware in an innovation lab"
                 loading="lazy"
-                className="w-full h-[500px] object-cover"
+                decoding="async"
+                className="w-full h-72 sm:h-96 lg:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>

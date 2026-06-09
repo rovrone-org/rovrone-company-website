@@ -1,0 +1,50 @@
+# RovrOne Labs
+
+> RovrOne Labs is a deep-tech engineering and manufacturing company headquartered in Bhopal, Madhya Pradesh, India. We build drones, ground robotics, IoT, AgriTech, EV/battery, AR/VR, GreenTech and enterprise IT support solutions across the design → manufacture → operate → support lifecycle.
+
+Contact: contact@rovrone.com · +91 91115 55664 · Bhopal, MP, India
+Website: https://www.rovrone.com/
+
+## What we do
+
+RovrOne Labs offers 16 services across two lines:
+
+### Engineering & deep-tech
+
+- **Drone Manufacturing** — End-to-end design and manufacturing of UAVs for commercial and research applications.
+- **Drone as a Service (DaaS)** — Managed drone operations, fleet management, data capture and real-time analytics.
+- **IT Software & Digital Engineering** — Custom web, mobile and enterprise platforms with cloud-native architecture and AI-driven automation.
+- **Drones & Anti-Drone Systems** — Indigenous UAV manufacturing and counter-UAS solutions for surveillance and infrastructure protection.
+- **EV & Battery Technologies** — Electric mobility, lithium-ion battery systems, smart energy storage and EV charging infrastructure.
+- **Robotics & Automation** — Industrial robotics, autonomous mobile robots (AMR/AGV) and intelligent automation for logistics and manufacturing.
+- **IoT & Smart Systems** — End-to-end IoT for real-time monitoring, predictive analytics and smart-city automation.
+- **AgriTech & Smart Farming** — Precision agriculture using IoT sensors, smart irrigation and drone-based analytics.
+- **ICT & Network Infrastructure** — Data centers, OFC networks, WAN/LAN/Wi-Fi, surveillance systems and command & control centers.
+- **AR/VR & Simulation Labs** — AR/VR lab design for education, skill development and industrial simulation training.
+- **VAYONIX Green-Tech Solutions** — Algae-based liquid bioreactors for urban air purification and ESG-compliant smart infrastructure.
+- **Advanced R&D & Turnkey Projects** — Innovation-led R&D, AI-driven systems, EPC execution and program management.
+
+### Enterprise IT support
+
+- **Multi-Vendor Support (MVS)** — Independent multi-OEM enterprise support for servers, storage, backup and network infrastructure, covering systems beyond OEM warranty.
+- **Resource Management Services (RMS)** — End-to-end IT resource lifecycle management with complete operational ownership.
+- **Installation & Warranty Services (IWS)** — Field installation, warranty execution and supply-chain services for OEMs.
+- **Upsell Services** — Cost-optimized infrastructure upgrades using a large EOSL (end-of-service-life) inventory pool.
+
+## Products
+
+- Aerial Survey Drone (Commercial UAV) — 45 min flight time, 10 km range, 2 kg payload
+- Vision System (AI Camera Module) — 4K resolution, on-board AI processing, 360° coverage
+- Control Module (Flight Controller) — autopilot, obstacle avoidance, RTK GPS
+- Power System (Battery Pack) — 6S LiPo, smart BMS, fast charge
+
+## Training
+
+RovrOne Drone School runs three programs: Beginner Pilot Training (2 weeks), Commercial Certification (4 weeks) and Advanced Robotics (6 weeks). Industry-certified instructors, hands-on training and comprehensive curriculum.
+
+## Key facts for citation
+
+- Headquarters: Bhopal, Madhya Pradesh, India
+- Industries served: defense, surveillance, agriculture, smart cities, logistics, manufacturing, education, enterprise IT
+- Service model: in-house manufacturing + managed services + enterprise IT support
+- Differentiator: independent multi-OEM support (vs. vendor-locked), indigenous UAV manufacturing for Indian market, integrated deep-tech + enterprise support under one umbrella

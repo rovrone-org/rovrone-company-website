@@ -225,7 +225,7 @@ export function Services() {
           className="text-center mb-16"
         >
           <div className="inline-block mb-4">
-            <div className="text-gray-900 px-4 py-1 rounded-full border border-gray-300 bg-gray-100">
+            <div className="inline-block text-gray-900 px-6 sm:px-8 py-2.5 rounded-full border border-gray-300 bg-gray-100 text-lg sm:text-xl font-medium tracking-[0.15em] uppercase">
               Our Services
             </div>
           </div>
@@ -243,12 +243,11 @@ export function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex items-center gap-4 mb-10"
+          className="text-center mb-12 mt-4"
         >
-          <div className="inline-flex items-center px-4 py-1 rounded-full border border-gray-300 bg-gray-100 text-sm text-gray-900">
+          <div className="inline-block text-gray-900 px-6 sm:px-8 py-2.5 rounded-full border border-gray-300 bg-gray-100 text-lg sm:text-xl font-medium tracking-[0.15em] uppercase">
             Engineering & Deep-Tech
           </div>
-          <div className="flex-1 h-px bg-gray-200" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
@@ -307,12 +306,11 @@ export function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex items-center gap-4 mb-10"
+          className="text-center mb-12 mt-4"
         >
-          <div className="inline-flex items-center px-4 py-1 rounded-full border border-gray-300 bg-gray-100 text-sm text-gray-900">
+          <div className="inline-block text-gray-900 px-6 sm:px-8 py-2.5 rounded-full border border-gray-300 bg-gray-100 text-lg sm:text-xl font-medium tracking-[0.15em] uppercase">
             Enterprise IT Support
           </div>
-          <div className="flex-1 h-px bg-gray-200" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

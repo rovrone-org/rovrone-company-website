@@ -1,16 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030213" />
+    <link rel="icon" type="image/jpeg" href="/src/assets/rov-logo.jpg" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <link rel="icon" type="image/jpeg" href="/src/assets/rov-logo.jpg" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>RovrOne Labs</title>
-    </head>
+    <!-- Primary SEO -->
+    <title>RovrOne Labs — Drones, Robotics & Deep-Tech Engineering | Bhopal, India</title>
+    <meta
+      name="description"
+      content="RovrOne Labs designs and manufactures aerial and ground robotics, drones, anti-drone systems, IoT, AgriTech, EV batteries, AR/VR labs and enterprise IT support. Engineering intelligence through innovation from Bhopal, India."
+    />
+    <meta
+      name="keywords"
+      content="drone manufacturing India, anti-drone systems, robotics company, Drone as a Service, DaaS, AgriTech, IoT solutions, EV batteries, AR VR simulation lab, enterprise IT support, multi-vendor support, RovrOne Labs, Bhopal robotics"
+    />
+    <meta name="author" content="RovrOne Labs" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.rovrone.com/" />
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.rovrone.com/" />
+    <meta property="og:site_name" content="RovrOne Labs" />
+    <meta property="og:title" content="RovrOne Labs — Drones, Robotics & Deep-Tech Engineering" />
+    <meta
+      property="og:description"
+      content="Trusted aerial and ground robotics, drone manufacturing, anti-drone systems, IoT, AgriTech, EV technologies and enterprise IT support. Engineering intelligence through innovation."
+    />
+    <meta property="og:image" content="https://www.rovrone.com/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RovrOne Labs — Drones, Robotics & Deep-Tech Engineering" />
+    <meta
+      name="twitter:description"
+      content="Drones, robotics, IoT, AgriTech, EV, AR/VR and enterprise IT support from Bhopal, India."
+    />
+    <meta name="twitter:image" content="https://www.rovrone.com/og-cover.jpg" />
+
+    <!-- Hint browser to start drone hero image early (LCP) -->
+    <link rel="preload" as="image" href="/src/assets/images/hero-aerial.jpg" fetchpriority="high" media="(min-width: 1024px)" />
+    <link rel="preload" as="image" href="/src/assets/images/hero-aerial-sm.jpg" fetchpriority="high" media="(max-width: 1023px)" />
+
+    <!-- Organization JSON-LD (SEO + AEO + GEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RovrOne Labs",
+        "alternateName": "RovrOne",
+        "url": "https://www.rovrone.com/",
+        "logo": "https://www.rovrone.com/src/assets/rov-logo.jpg",
+        "description": "RovrOne Labs is a deep-tech engineering and manufacturing company building drones, ground robotics, IoT, AgriTech, EV/battery, AR/VR, GreenTech, R&D and enterprise IT support solutions.",
+        "foundingLocation": "Bhopal, Madhya Pradesh, India",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bhopal",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-91115-55664",
+          "email": "contact@rovrone.com",
+          "contactType": "sales",
+          "areaServed": "IN",
+          "availableLanguage": ["en", "hi"]
+        },
+        "sameAs": [
+          "https://twitter.com/rovrone",
+          "https://www.linkedin.com/company/rovrone",
+          "https://github.com/rovrone"
+        ]
+      }
+    </script>
+
+    <!-- WebSite JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RovrOne Labs",
+        "url": "https://www.rovrone.com/",
+        "publisher": { "@type": "Organization", "name": "RovrOne Labs" },
+        "inLanguage": "en-IN"
+      }
+    </script>
+
+    <!-- Service catalog JSON-LD (helps AI answer engines summarize what we do) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RovrOne Labs",
+        "url": "https://www.rovrone.com/",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "RovrOne Labs services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drone Manufacturing", "description": "End-to-end design and manufacturing of UAVs for commercial and research applications." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drone as a Service (DaaS)", "description": "Managed drone operations, data capture and analytics for clients." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT Software & Digital Engineering", "description": "Custom web, mobile and enterprise platforms with cloud-native and AI-driven automation." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drones & Anti-Drone Systems", "description": "Indigenous UAV manufacturing and counter-UAS for surveillance and infrastructure protection." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "EV & Battery Technologies", "description": "Electric mobility, lithium-ion battery systems and EV charging infrastructure." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Robotics & Automation", "description": "Industrial robotics, AMR/AGV and intelligent automation for logistics and manufacturing." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IoT & Smart Systems", "description": "End-to-end IoT for real-time monitoring, predictive analytics and smart-city automation." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AgriTech & Smart Farming", "description": "Precision agriculture using IoT sensors, smart irrigation and drone-based analytics." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ICT & Network Infrastructure", "description": "Data centers, OFC networks, WAN/LAN/Wi-Fi, surveillance and command & control centers." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AR/VR & Simulation Labs", "description": "AR/VR lab design for education, training and simulation-based learning." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "VAYONIX Green-Tech Solutions", "description": "Algae-based bioreactors for urban air purification and ESG-compliant smart infrastructure." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Advanced R&D & Turnkey Projects", "description": "Innovation-led R&D, AI-driven systems, EPC execution and program management." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Multi-Vendor Support (MVS)", "description": "Independent multi-OEM enterprise hardware support for servers, storage, backup and network beyond OEM warranty." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Resource Management Services (RMS)", "description": "End-to-end IT resource lifecycle management with complete operational ownership." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Installation & Warranty Services (IWS)", "description": "On-site installation, warranty execution and supply-chain services for OEMs." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Upsell Services", "description": "EOSL inventory and cost-optimized infrastructure upgrades extending hardware lifecycle." } }
+          ]
+        }
+      }
+    </script>
+
+    <!-- FAQ JSON-LD (boosts AEO — answer engines surface this directly) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does RovrOne Labs do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RovrOne Labs is a deep-tech engineering and manufacturing company headquartered in Bhopal, India. We design and build drones and ground robotics, deliver Drone-as-a-Service operations, develop IoT, AgriTech, EV and battery technologies, AR/VR simulation labs, GreenTech solutions, and provide enterprise IT infrastructure support."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is RovrOne Labs located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RovrOne Labs is headquartered in Bhopal, Madhya Pradesh, India. Contact: contact@rovrone.com, +91 91115 55664."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does RovrOne Labs manufacture indigenous drones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. RovrOne manufactures indigenous UAVs and counter-UAS systems for commercial, research, surveillance and critical-infrastructure protection use cases, and offers Drone-as-a-Service operations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What enterprise IT support services does RovrOne Labs offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RovrOne offers Multi-Vendor Support (MVS), Resource Management Services (RMS), Installation & Warranty Services (IWS) and Upsell Services that include EOSL inventory access — supporting servers, storage, backup and network infrastructure beyond OEM warranty."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get a quote from RovrOne Labs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Visit the Contact section on rovrone.com, fill the project form or email contact@rovrone.com. The team typically responds within one business day."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

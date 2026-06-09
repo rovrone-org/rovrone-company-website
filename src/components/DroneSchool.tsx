@@ -57,7 +57,7 @@ export function DroneSchool() {
           className="text-center mb-16"
         >
           <div className="inline-block mb-4">
-            <div className="text-gray-900 px-4 py-1 rounded-full border border-gray-300 bg-gray-100">
+            <div className="inline-block text-gray-900 px-6 sm:px-8 py-2.5 rounded-full border border-gray-300 bg-gray-100 text-lg sm:text-xl font-medium tracking-[0.15em] uppercase">
               Education
             </div>
           </div>
@@ -136,7 +136,7 @@ export function DroneSchool() {
           <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
             Join hundreds of certified drone pilots who started their journey with RovrOne Drone School.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+          <button className="bg-white text-gray-900 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
             View Course Schedule
           </button>
         </motion.div>

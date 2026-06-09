@@ -35,12 +35,14 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation activeSection={activeSection} />
-      <Hero />
-      <About />
-      <Services />
-      <Products />
-      <DroneSchool />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Products />
+        <DroneSchool />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

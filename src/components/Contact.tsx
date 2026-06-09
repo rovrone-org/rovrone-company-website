@@ -56,7 +56,7 @@ export function Contact() {
           className="text-center mb-16"
         >
           <div className="inline-block mb-4">
-            <div className="text-blue-600 px-4 py-1 rounded-full border border-blue-200 bg-blue-50">
+            <div className="inline-block text-gray-900 px-6 sm:px-8 py-2.5 rounded-full border border-gray-300 bg-gray-100 text-lg sm:text-xl font-medium tracking-[0.15em] uppercase">
               Get in Touch
             </div>
           </div>
@@ -95,8 +95,8 @@ export function Contact() {
                   viewport={{ once: true }}
                   className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors group"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-600 transition-colors">
-                    <info.icon className="text-blue-600 group-hover:text-white transition-colors" size={20} />
+                  <div className="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-black transition-colors">
+                    <info.icon className="text-gray-900 group-hover:text-white transition-colors" size={20} />
                   </div>
                   <div>
                     <div className="text-sm text-gray-500 mb-1">{info.title}</div>
@@ -130,7 +130,7 @@ export function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 shadow-lg">
+            <form onSubmit={handleSubmit} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 shadow-lg border border-gray-200">
               <div className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm mb-2 text-gray-700">
@@ -143,7 +143,7 @@ export function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-black focus:ring-2 focus:ring-black/10 outline-none transition-all"
                     placeholder="Your Name"
                   />
                 </div>
@@ -159,7 +159,7 @@ export function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-black focus:ring-2 focus:ring-black/10 outline-none transition-all"
                     placeholder="Your Email"
                   />
                 </div>
@@ -174,7 +174,7 @@ export function Contact() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-black focus:ring-2 focus:ring-black/10 outline-none transition-all"
                     placeholder="Your Company"
                   />
                 </div>
@@ -190,14 +190,14 @@ export function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-black focus:ring-2 focus:ring-black/10 outline-none transition-all resize-none"
                     placeholder="Tell us about your project..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/30 flex items-center justify-center gap-2"
+                  className="w-full bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:shadow-black/30 flex items-center justify-center gap-2"
                 >
                   Send Message
                   <Send size={18} />
