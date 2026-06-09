@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck, BatteryCharging, Bot, Rss, Leaf, Network, MonitorSmartphone, Droplets, FlaskConical } from 'lucide-react';
+import { Layers, Cloud, FileText, ArrowRight, Code2, ShieldCheck, BatteryCharging, Bot, Rss, Leaf, Network, MonitorSmartphone, Droplets, FlaskConical, Server, RefreshCw, Wrench, Recycle } from 'lucide-react';
 
 export function Services() {
   const services = [
@@ -146,8 +146,59 @@ export function Services() {
         'EPC execution',
         'Program management'
       ]
+    },
+    {
+      icon: Server,
+      title: 'Multi-Vendor Support (MVS)',
+      subtitle: 'Independent multi-OEM enterprise support.',
+      description: 'Independent multi-OEM support for enterprise servers, storage, backup, and network infrastructure — covering systems beyond OEM warranty windows.',
+      features: [
+        'Multi-OEM server & storage support',
+        'Backup & DR systems',
+        'Network infrastructure support',
+        'Post-warranty coverage'
+      ]
+    },
+    {
+      icon: RefreshCw,
+      title: 'Resource Management Services (RMS)',
+      subtitle: 'IT resource lifecycle ownership.',
+      description: 'End-to-end lifecycle management of IT resources — from procurement and deployment to decommissioning — with complete operational ownership.',
+      features: [
+        'Asset lifecycle ownership',
+        'Procurement & deployment',
+        'Operational management',
+        'Decommissioning & disposal'
+      ]
+    },
+    {
+      icon: Wrench,
+      title: 'Installation & Warranty Services (IWS)',
+      subtitle: 'Supply chain & on-site services.',
+      description: 'Field installation, warranty execution, and supply chain services — letting OEMs focus on product development while we handle deployment and service delivery.',
+      features: [
+        'On-site installation',
+        'Warranty service execution',
+        'Supply chain support',
+        'OEM-partnered service delivery'
+      ]
+    },
+    {
+      icon: Recycle,
+      title: 'Upsell Services',
+      subtitle: 'EOSL inventory & cost savings.',
+      description: 'Cost-optimized infrastructure upgrades using a large EOSL (end-of-service-life) inventory pool — helping customers extend the life of existing enterprise infrastructure.',
+      features: [
+        'EOSL inventory access',
+        'Infrastructure upgrades',
+        'Cost optimization',
+        'Extended hardware lifecycle'
+      ]
     }
   ];
+
+  const engineeringServices = services.slice(0, 12);
+  const enterpriseServices = services.slice(12);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -186,13 +237,91 @@ export function Services() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
+        {/* Engineering & Deep-Tech */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="flex items-center gap-4 mb-10"
+        >
+          <div className="inline-flex items-center px-4 py-1 rounded-full border border-gray-300 bg-gray-100 text-sm text-gray-900">
+            Engineering & Deep-Tech
+          </div>
+          <div className="flex-1 h-px bg-gray-200" />
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          {engineeringServices.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              transition={{ duration: 0.6, delay: Math.min(index, 4) * 0.1 }}
+              viewport={{ once: true }}
+              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+            >
+              <div className="flex items-start gap-6 mb-6">
+                <div className="flex-shrink-0 w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center group-hover:bg-black transition-colors duration-300">
+                  <service.icon className="text-gray-900 group-hover:text-white transition-colors duration-300" size={32} />
+                </div>
+                <div className="flex-1">
+                  <h3 className="mb-1">{service.title}</h3>
+                  <p className="text-gray-500">{service.subtitle}</p>
+                </div>
+              </div>
+
+              <p className="text-gray-600 mb-6">
+                {service.description}
+              </p>
+
+              <ul className="space-y-3 mb-8">
+                {service.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-center gap-3 text-gray-700">
+                    <div className="w-1.5 h-1.5 bg-gray-900 rounded-full"></div>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex gap-3">
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="flex-1 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:shadow-black/30 flex items-center justify-center gap-2"
+                >
+                  Request a Quote
+                  <ArrowRight size={18} />
+                </button>
+                <button className="px-6 py-3 rounded-lg border-2 border-gray-300 hover:border-black transition-all duration-300 flex items-center gap-2 text-gray-700 hover:text-black">
+                  <FileText size={18} />
+                  Brochure
+                </button>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Enterprise IT Support */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="flex items-center gap-4 mb-10"
+        >
+          <div className="inline-flex items-center px-4 py-1 rounded-full border border-gray-300 bg-gray-100 text-sm text-gray-900">
+            Enterprise IT Support
+          </div>
+          <div className="flex-1 h-px bg-gray-200" />
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {enterpriseServices.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >

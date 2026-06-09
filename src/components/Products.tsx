@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Cpu, Radio, Camera, Battery } from 'lucide-react';
+import productsField from '../assets/images/products-field.jpg';
 
 export function Products() {
   const products = [
@@ -102,8 +103,9 @@ export function Products() {
           className="mt-16 relative rounded-2xl overflow-hidden shadow-2xl"
         >
           <img
-            src="https://images.unsplash.com/photo-1668883738061-e46019b0b9fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcm9uZSUyMGFlcmlhbCUyMHZpZXd8ZW58MXx8fHwxNzYyNTU1Njc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src={productsField}
             alt="Drone Technology"
+            loading="lazy"
             className="w-full h-[400px] object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex items-end">

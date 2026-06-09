@@ -1,26 +1,8 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Play } from 'lucide-react';
-import React, { useState, useEffect } from 'react';
+import heroAerial from '../assets/images/hero-aerial.jpg';
 
 export function Hero() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const getFontSize = () => {
-    if (windowWidth <= 640) { // Smaller mobile devices
-      return '5rem';
-    }
-    return '8rem'; // Larger screens
-  };
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -52,8 +34,8 @@ export function Hero() {
         >
           <h1
             id="hero-company-name"
-            className="max-w-4xl mx-auto mb-6 font-bold"
-            style={{ fontSize: getFontSize() }}
+            className="max-w-5xl mx-auto mb-6 font-bold leading-none tracking-tight text-gray-900"
+            style={{ fontSize: 'clamp(3.5rem, 12vw, 8rem)' }}
           >
             RovrOne Labs
           </h1>
@@ -94,6 +76,21 @@ export function Hero() {
               Learn More
             </button>
           </motion.div>
+
+          {/* Hero visual */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.6 }}
+            className="relative mt-16 mx-auto max-w-5xl rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5"
+          >
+            <img
+              src={heroAerial}
+              alt="Aerial robotics in operation"
+              className="w-full h-[280px] sm:h-[360px] object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+          </motion.div>
         </motion.div>
 
         {/* Floating Elements */}
@@ -106,7 +103,8 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute top-1/4 left-10 w-16 h-16 bg-gray-400/20 rounded-full blur-xl"
+          className="absolute top-1/4 left-10 w-16 h-16 bg-gray-400/10 rounded-full blur-2xl"
+          aria-hidden="true"
         />
         <motion.div
           animate={{
@@ -118,24 +116,61 @@ export function Hero() {
             ease: "easeInOut",
             delay: 1
           }}
-          className="absolute bottom-1/4 right-20 w-24 h-24 bg-gray-500/20 rounded-full blur-xl"
+          className="absolute bottom-1/4 right-20 w-24 h-24 bg-gray-500/10 rounded-full blur-2xl"
+          aria-hidden="true"
         />
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Animated Drone Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5"
+        aria-hidden="true"
       >
         <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-gray-400 rounded-full flex items-start justify-center p-2"
+          animate={{ y: [0, -8, 0] }}
+          transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
         >
-          <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
+          <svg width="80" height="48" viewBox="0 0 80 48" className="text-gray-600">
+            {/* Diagonal arms */}
+            <line x1="40" y1="24" x2="12" y2="10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            <line x1="40" y1="24" x2="68" y2="10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            <line x1="40" y1="24" x2="12" y2="38" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            <line x1="40" y1="24" x2="68" y2="38" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            {/* Body */}
+            <rect x="30" y="18" width="20" height="14" rx="3" fill="currentColor" />
+            {/* Camera lens */}
+            <circle cx="40" cy="36" r="2.2" fill="currentColor" opacity="0.55" />
+            {/* Spinning rotor blades */}
+            {[
+              { cx: 12, cy: 10 },
+              { cx: 68, cy: 10 },
+              { cx: 12, cy: 38 },
+              { cx: 68, cy: 38 },
+            ].map((r, i) => (
+              <motion.ellipse
+                key={i}
+                cx={r.cx}
+                cy={r.cy}
+                rx="9"
+                ry="1.6"
+                fill="currentColor"
+                opacity="0.55"
+                style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+                animate={{ rotate: 360 }}
+                transition={{ duration: 0.35, repeat: Infinity, ease: 'linear' }}
+              />
+            ))}
+          </svg>
         </motion.div>
+        {/* Drifting ground shadow */}
+        <motion.div
+          className="w-10 h-1 bg-gray-400/40 rounded-full blur-sm"
+          animate={{ scaleX: [1, 0.7, 1], opacity: [0.5, 0.3, 0.5] }}
+          transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+        />
       </motion.div>
     </section>
   );
